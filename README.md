@@ -14,3 +14,5 @@ To manage traffic flow, introduction of new technique ‘Dynamic Traffic Signal 
 
 --------------------------------
 Final Year Project at NIT A,2021
+
+Contributors : [@feruxhi]
