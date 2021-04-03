@@ -51,25 +51,23 @@ always @(*) begin //switch between states
                side_road_light<=3'b100; //RED
                
                if((SENSOR==1))begin 
-                    next_state<=MY_SR;end //If a congestion was cleared or no congestion occured in 
-                                              //20 seconds; change the lights to STOP-ATTENTION and GO-ATTENTION
+                       next_state<=MY_SR;end //depending the SENSOR input change the lights to YELLOW and RED
                
             end
         MY_SR:
             begin
                 main_road_light<=3'b010; //yellow
                 side_road_light<=3'b100; //red
-                if(second==9)begin //If there is congestion after 3 seconds     
+                    if(second==9)begin //If there is congestion after 9 seconds     
                     next_state<=MR_SG;end     //main_road_light will be GREEN and side_road_light will be RED
             end
         MR_SG:
             begin
                 main_road_light<=3'b100; //RED
                 side_road_light<=3'b001; //GREEN
-                if(second==19)begin //If there is congestion after the 
-                                                                           //m_r_l turned RED or no congestion
-                    next_state<=MR_SY;end                              //occured in 9 seconds change the lights
-                                                                           //to GO-ATTENTION and STOP-ATTENTION 
+                    if(second==19)begin //If there is congestion after 20 seconds
+                                                                           
+                    next_state<=MR_SY;end       // lights changed to RED in Main Street and GREEN in Side Street                             
             end
         MR_SY:
             begin
