@@ -11,6 +11,8 @@ Traffic lights are source of signalling device for road junctions. Traffic light
 
 To manage traffic flow, introduction of new technique ‘Dynamic Traffic Signal Controller’ emerged. Thus, optimization of traffic light switching; controls road capacity traffic flow and prevent congestions. The proposed system has simple architecture, ease of implementation and user friendliness.
 
+!img [https://github.com/feruxhi/Traffic-Light-Control/blob/main/waveform_TLC_II.png]
+
 
 --------------------------------
 Final Year Project at NIT A,2021
