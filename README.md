@@ -12,11 +12,13 @@ Traffic lights are source of signalling device for road junctions. Traffic light
 To manage traffic flow, introduction of new technique ‘Dynamic Traffic Signal Controller’ emerged. Thus, optimization of traffic light switching; controls road capacity traffic flow and prevent congestions. The proposed system has simple architecture, ease of implementation and user friendliness.
 ----------------------------------------
 
-#Implementation
+# Implementation
 
 1. Verilog Implementation :
 
+The verilog file is controller.v and it's testbench is controller_tb.v
 
+A live working EDA playground model is there at https://www.edaplayground.com/x/Un6h
 Created a Finite State Machine for the controller with the traffic signal for the main highway getting highest priority because cars are continuously present on the main highway.
 
 <img src="https://github.com/feruxhi/Traffic-Light-Control/blob/main/waveform_TLC_II.png">
